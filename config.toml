@@ -18,20 +18,6 @@ highlight_code = true
 # Put all your custom variables here
 accent_color = "hsl(32 95% 67%)"
 
-[extra.nav]
-# When set to true and [extra.fediverse] is defined, it will use avatar from
-# said Mastodon account, otherwise it'll fallback to apple_touch_icon specified
-# in [extra.meta] or its default value.
-# Also accepts arbitrary filenames and URLs for custom images.
-icon = "apple-touch-icon.png"
-# Usage of an icon is heavily adviced. In case if none is provided, first two
-# letters of the link name will be used instead.
-# Any icon name from https://phosphoricons.com can be used.
-links = [
-    { url = "https://discord.com/invite/ksgyZgCvGx", name = "Discord Server", icon = "discord-logo" },
-    { url = "https://matrix.to/#/#snug-nook-space:envs.net", name = "Matrix Space", icon = "matrix-logo" },
-]
-
 [extra.meta]
 # Variables bellow accept either "true" or a filename.
 # Favicon can also accept an emoji instead of a filename.
@@ -44,3 +30,15 @@ links = [
 favicon = "favicon.ico"
 apple_touch_icon = true
 card = false
+
+[extra.nav]
+icon = true
+links = [
+    { url = "https://discord.com/invite/ksgyZgCvGx", name = "Discord Server", icon = "discord-logo" },
+    { url = "https://matrix.to/#/#snug-nook-space:envs.net", name = "Matrix Space", icon = "matrix-logo" },
+]
+
+[extra.footer]
+copyright = true
+show_powered_by = true
+show_timestamp = true
