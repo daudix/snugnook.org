@@ -35,7 +35,7 @@ card = false
 icon = true
 links = [
     { url = "https://discord.com/invite/ksgyZgCvGx", name = "Discord Server", icon = "discord-logo" },
-    { url = "https://matrix.to/#/#snug-nook-space:envs.net", name = "Matrix Space", icon = "matrix-logo" },
+    { url = "https://matrix.to/#/#space:snugnook.org", name = "Matrix Space", icon = "matrix-logo" },
 ]
 
 [extra.footer]
