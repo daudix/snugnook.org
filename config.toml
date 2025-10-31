@@ -36,6 +36,9 @@ icon = true
 links = [
     { url = "https://discord.com/invite/ksgyZgCvGx", name = "Discord Server", icon = "discord-logo" },
     { url = "https://matrix.to/#/#space:snugnook.org", name = "Matrix Space", icon = "matrix-logo" },
+    { url = "https://bsky.app/profile/snugnook.org", name = "Bluesky profile", icon = "butterfly" },
+    { url = "https://forums.snugnook.org", name = "Forums", icon = "arrow-bend-double-up-left" },
+    { url = "https://wiki.snugnook.org", name = "Wiki", icon = "books" },
 ]
 
 [extra.footer]
