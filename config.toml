@@ -9,7 +9,8 @@ highlight_code = true
 github_alerts = true
 
 [extra]
-accent_color = "hsl(32 95% 67%)"
+# accent_color = "hsl(32 95% 67%)"
+accent_color = "orange"
 csp = [
   { directive = "font-src", domains = [
     "'self'",
