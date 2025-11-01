@@ -10,6 +10,38 @@ github_alerts = true
 
 [extra]
 accent_color = "hsl(32 95% 67%)"
+csp = [
+  { directive = "font-src", domains = [
+    "'self'",
+  ] },
+  { directive = "img-src", domains = [
+    "'self'",
+    "https:",
+    "data:",
+  ] },
+  { directive = "media-src", domains = [
+    "'self'",
+    "https:",
+  ] },
+  { directive = "script-src", domains = [
+    "cloud.umami.is",
+  ] },
+  { directive = "style-src", domains = [
+    "'self'",
+    "'unsafe-inline'",
+  ] },
+  { directive = "connect-src", domains = [
+    "*.umami.dev",
+    "cloud.umami.is",
+    "discord.com",
+  ] },
+  { directive = "base-uri", domains = [
+    "'none'",
+  ] },
+  { directive = "form-action", domains = [
+    "'none'",
+  ] },
+]
 
 [extra.meta]
 favicon = "favicon.ico"
@@ -19,14 +51,20 @@ card = false
 [extra.nav]
 icon = true
 links = [
-    { url = "https://discord.com/invite/ksgyZgCvGx", name = "Discord Server", icon = "discord-logo" },
-    { url = "https://matrix.to/#/#space:snugnook.org", name = "Matrix Space", icon = "matrix-logo" },
-    { url = "https://bsky.app/profile/snugnook.org", name = "Bluesky profile", icon = "butterfly" },
-    { url = "https://forums.snugnook.org", name = "Forums", icon = "arrow-bend-double-up-left" },
-    { url = "https://wiki.snugnook.org", name = "Wiki", icon = "books" },
+  { url = "https://discord.com/invite/ksgyZgCvGx", name = "Discord Server", icon = "discord-logo" },
+  { url = "https://matrix.to/#/#space:snugnook.org", name = "Matrix Space", icon = "matrix-logo" },
+  { url = "https://bsky.app/profile/snugnook.org", name = "Bluesky profile", icon = "butterfly" },
+  { url = "https://forums.snugnook.org", name = "Forums", icon = "arrow-bend-double-up-left" },
+  { url = "https://wiki.snugnook.org", name = "Wiki", icon = "books" },
 ]
 
 [extra.footer]
 copyright = true
 show_powered_by = true
 show_timestamp = true
+
+[extra.analytics]
+service = "umami"
+id = "a1a80a4d-ade1-41c6-aa27-bb26acee4c40"
+self_hosted_url = "https://stats.daudix.one"
+do_not_track = false
