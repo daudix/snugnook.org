@@ -1,32 +1,17 @@
-# The URL the site will be built for
 base_url = "https://snugnook.org"
 title = "Snug Nook"
 theme = "ametrine"
-
-# Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
-
-# Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
 [markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
+github_alerts = true
 
 [extra]
-# Put all your custom variables here
 accent_color = "hsl(32 95% 67%)"
 
 [extra.meta]
-# Variables bellow accept either "true" or a filename.
-# Favicon can also accept an emoji instead of a filename.
-# File extension are being respected, so e.g. if favicon has .gif extension
-# it'll be treated as an animated one.
-# If set to "true" these will use the default filenames:
-# favicon          = favicon.png
-# apple_touch_icon = apple-touch-icon.png
-# card             = card.png
 favicon = "favicon.ico"
 apple_touch_icon = true
 card = false
