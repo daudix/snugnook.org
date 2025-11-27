@@ -41,6 +41,7 @@ blockquote:has(div) {
 	display: flex;
 	position: relative;
 	flex-direction: column;
+	z-index: 1;
 	transition: var(--transition-longer);
 	margin-inline: auto;
 	border-radius: calc(var(--rounded-corner) + 1rem);
