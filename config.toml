@@ -5,7 +5,6 @@ compile_sass = true
 build_search_index = true
 
 [markdown]
-highlight_code = true
 github_alerts = true
 
 [extra]
@@ -24,16 +23,11 @@ csp = [
     "'self'",
     "https:",
   ] },
-  { directive = "script-src", domains = [
-    "cloud.umami.is",
-  ] },
   { directive = "style-src", domains = [
     "'self'",
     "'unsafe-inline'",
   ] },
   { directive = "connect-src", domains = [
-    "*.umami.dev",
-    "cloud.umami.is",
     "discord.com",
   ] },
   { directive = "base-uri", domains = [
