@@ -1,5 +1,6 @@
 base_url = "https://snugnook.org"
 title = "Snug Nook"
+description = "The community-focused community."
 theme = "ametrine"
 compile_sass = true
 build_search_index = true
