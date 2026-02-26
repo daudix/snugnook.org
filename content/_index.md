@@ -14,7 +14,7 @@ no_header = true
 Ever wanted to join yet another Discord server where you can act all silly and still have productive conversations? Had enough of the toxisity and, um, freakiness? Want to meet some cool new people? In that case, <span class="rainbow"><strong>Snug Nook</strong></span> fits the bill. Gluten-free and is proven safe by the FDA. Probably.
 
 > [!NOTE]
-> Read about its creation and the motivation behind it [here](https://daudix.one/blog/snug-nook/).
+> Read about its creation and the motivation behind it on [our blog](@/blog/2024-10-31-snug-nook/index.md).
 
 The server isn't special in itself, there are many servers out there, however, the wonderful people on it are. It is meant to be cozy, welcoming, and friendly, which means toxicity, doxxing, drama, suicide threats, <span class="spoiler">NSFW</span>, and the like are not welcome.
 
@@ -36,7 +36,7 @@ At Snug Nook we have many unique "traditions", and weekend rebrand is one of the
 
 ## Bridges
 
-Discord isn't your cup of tea? No big deal, we provide a few bridges that, whilist lacking some minor features, allow chatting with Discord folks:
+Discord isn't your cup of tea? No big deal, we provide a high-quality Matrix bridge which replicates the Discord experience almost 1:1, in addition to some community-run bridges:
 
 <div class="icon-grid">
 
@@ -44,14 +44,14 @@ Discord isn't your cup of tea? No big deal, we provide a few bridges that, whili
 <img class="transparent no-hover pixels drop-shadow icon" src="matrix.gif" alt="Pixel art Discord icon." />
 <div class="details">
 <strong>Matrix</strong>
-<p><small>The only officialy supported bridge.</small></p>
+<p><small>The only official bridge at the time.</small></p>
 </div>
 </a>
 
-<a href="https://rvlt.gg/D0gqYcCP">
-<img class="transparent no-hover pixels drop-shadow icon" src="revolt.gif" alt="Pixel art Revolt icon." />
+<a href="https://stt.gg/D0gqYcCP">
+<img class="transparent no-hover pixels drop-shadow icon" src="stoat.gif" alt="Pixel art Stoat icon." />
 <div class="details">
-<strong>Revolt</strong>
+<strong>Stoat</strong>
 <p><small>Collaboration with Icycoide<sup>1</sup>.</small></p>
 </div>
 </a>

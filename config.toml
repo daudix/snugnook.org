@@ -4,8 +4,19 @@ description = "The community-focused community."
 theme = "ametrine"
 compile_sass = true
 build_search_index = true
+author = "The Snug Nook Team"
+generate_feeds = true
+feed_filenames = ["atom.xml", "rss.xml"]
+
+taxonomies = [
+  { name = "tags", feed = true, paginate_by = 10 },
+  # { name = "categories", feed = true },
+]
 
 [markdown]
+smart_punctuation = true
+bottom_footnotes = true
+external_links_class = "external"
 github_alerts = true
 
 [extra]
@@ -47,6 +58,7 @@ card = false
 [extra.nav]
 icon = true
 links = [
+  { url = "@/blog/_index.md", name = "Blog", icon = "newspaper-clipping" },
   { url = "https://discord.com/invite/ksgyZgCvGx", name = "Discord Server", icon = "discord-logo" },
   { url = "https://matrix.to/#/#space:snugnook.org", name = "Matrix Space", icon = "matrix-logo" },
   { url = "https://bsky.app/profile/snugnook.org", name = "Bluesky profile", icon = "butterfly" },
