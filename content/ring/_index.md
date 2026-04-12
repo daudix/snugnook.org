@@ -7,6 +7,11 @@ scripts = ["ring/members.js", "ring/webringu.js"]
 
 All members of Snug Nook are invited to join our cozy little webring. It is powered by [webringu](https://petrapixel.neocities.org/coding/webringu).
 
+## Members
+
+<div id="webringulist"></div>
+<noscript>Please enable JavaScript to view the member list.</noscript>
+
 ## Rules
 
 Since websites are inherently personal, we cannot assume that everyone will follow [Snug Nook rules](https://wiki.snugnook.org/rules) and websites will be approved on case-to-case basis.
@@ -36,8 +41,3 @@ Sample code to give you an idea how it can look like:
 Oh right, how to actually join?
 
 Well, it's quite simple, actually! Just ask to in `#websites` channel!
-
-## Members
-
-<div id="webringulist"></div>
-<noscript>Please enable JavaScript to view the member list.</noscript>
