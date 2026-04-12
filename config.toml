@@ -19,9 +19,19 @@ bottom_footnotes = true
 external_links_class = "external"
 github_alerts = true
 
+[markdown.highlighting]
+style = "class"
+light_theme = "monokai-pro-light"
+dark_theme = "monokai-pro"
+extra_themes = [
+  "themes/ametrine/giallo/themes/monokai-pro-light.json",
+  "themes/ametrine/giallo/themes/monokai-pro.json",
+]
+
 [extra]
 # accent_color = "hsl(32 95% 67%)"
 accent_color = "orange"
+copy_button = true
 csp = [
   { directive = "font-src", domains = [
     "'self'",
@@ -58,12 +68,15 @@ card = false
 [extra.nav]
 icon = true
 links = [
-  # { url = "@/blog/_index.md", name = "Blog", icon = "newspaper-clipping" },
-  { url = "https://discord.com/invite/ksgyZgCvGx", name = "Discord Server", icon = "discord-logo" },
-  { url = "https://matrix.to/#/#space:snugnook.org", name = "Matrix Space", icon = "matrix-logo" },
-  { url = "https://bsky.app/profile/snugnook.org", name = "Bluesky Profile", icon = "butterfly" },
-  { url = "https://forums.snugnook.org", name = "Forums", icon = "arrow-bend-double-up-left" },
-  { url = "https://wiki.snugnook.org", name = "Wiki", icon = "books" },
+  { url = "@/blog/_index.md", name = "Snug Blog", icon = "newspaper-clipping" },
+  { url = "@/ring/_index.md", name = "Snug Ring", icon = "link" },
+  { name = "External", category = [
+    { url = "https://discord.com/invite/ksgyZgCvGx", name = "Discord Server", icon = "discord-logo" },
+    { url = "https://matrix.to/#/#space:snugnook.org", name = "Matrix Space", icon = "matrix-logo" },
+    { url = "https://bsky.app/profile/snugnook.org", name = "Bluesky Profile", icon = "butterfly" },
+    { url = "https://forums.snugnook.org", name = "Forums", icon = "arrow-bend-double-up-left" },
+    { url = "https://wiki.snugnook.org", name = "Wiki", icon = "books" },
+  ] },
 ]
 
 [extra.footer]
