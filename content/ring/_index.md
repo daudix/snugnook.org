@@ -15,9 +15,9 @@ Since websites are inherently personal, we cannot assume that everyone will foll
 
 You are free to display the webring however you want, the only requirement is presence of the following links:
 
-- <https://snugnook.org/ring> - webring home
-- <https://snugnook.org/ring?action=previous> - previous website in webring
-- <https://snugnook.org/ring?action=next> - next website in webring
+- <https://snugnook.org/ring>
+- <https://snugnook.org/ring?action=previous>
+- <https://snugnook.org/ring?action=next>
 
 Sample code to give you an idea how it can look like:
 
