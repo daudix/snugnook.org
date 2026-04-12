@@ -31,6 +31,12 @@ Sample code to give you an idea how it can look like:
 </div>
 ```
 
+## Join
+
+Oh right, how to actually join?
+
+Well, it's quite simple, actually! Just ask to in `#websites` channel!
+
 ## Members
 
 <div id="webringulist"></div>
