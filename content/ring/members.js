@@ -1,6 +1,6 @@
 const members = [
 	{
-		url: "https://daudix.one",
+		url: "https://daudix.one/",
 		title: "Daudix",
 	},
 ];
