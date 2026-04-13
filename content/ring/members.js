@@ -15,4 +15,8 @@ const members = [
 		url: "https://reduxflakes.nekoweb.org/",
 		title: "ReduxFlakes",
 	},
+	{
+		url: "https://anins1der.com/",
+		title: "anins1der",
+	},
 ];
