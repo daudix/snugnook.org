@@ -23,4 +23,8 @@ const members = [
     url: "https://vuvien.xyz/",
     title: "vuvien",
   },
+  {
+    url: "https://mambuco.dev/",
+    title: "Mambuco",
+  },
 ];
