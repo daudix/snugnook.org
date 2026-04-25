@@ -1,0 +1,23 @@
+{% macro ring_members(section) %}
+
+<table>
+  <thead>
+    <tr>
+      <th>Member</th>
+      <th>Website</th>
+    </tr>
+  </thead>
+  <tbody>
+  {%- for node in section.subsections -%}
+    {%- set member = get_section(path=node) -%}
+    <tr>
+      <td>{{ member.title }}</td>
+      <td>
+        <a href="{{ 'https://' ~ member.components[1] | safe }}"><div>{{ member.components[1] }}</div></a>
+      </td>
+    </tr>
+  {%- endfor -%}
+  </tbody>
+</table>
+
+{% endmacro ring_members %}

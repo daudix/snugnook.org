@@ -1,0 +1,31 @@
+{%- set member = page.ancestors | last -%}
+{%- set tree = get_section(path="ring/_index.md") -%}
+{%- set count = tree.subsections | length -%}
+{%- set index = 0 -%}
+
+{%- for node in tree.subsections -%}
+  {%- if node == member -%}
+    {%- set_global index = loop.index0 -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- if page.slug == "next" -%}
+  {%- set_global neighbor_index = (index + 1) % count -%}
+{%- elif page.slug == "previous" -%}
+  {%- set_global neighbor_index = (index + count - 1) % count -%}
+{%- endif -%}
+
+{%- set neighbor = get_section(path=tree.subsections[neighbor_index]) -%}
+{%- set neighbor_url = 'https://' ~ neighbor.components[1] -%}
+
+<!doctype html>
+<meta charset="utf-8">
+<title>Redirect</title>
+<script>
+  window.location.replace("{{ neighbor_url | safe }}");
+</script>
+<noscript>
+  <meta http-equiv="refresh" content="0; url={{ neighbor_url | safe }}">
+</noscript>
+<p><a href="{{ neighbor_url | safe }}">Click here</a> to be redirected.</p>

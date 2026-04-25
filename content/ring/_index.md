@@ -1,16 +1,15 @@
 +++
 title = "Snug Ring"
 description = "Snug Nook, now in a form of a webring."
-[extra]
-scripts = ["ring/members.js", "ring/webringu.js"]
+template = "ring.html"
+page_template = "ring_redirect.html"
 +++
 
-All members of Snug Nook are invited to join our cozy little webring. It is powered by [webringu](https://petrapixel.neocities.org/coding/webringu).
+All members of Snug Nook are invited to join our cozy little webring. It used to be powered by [webringu](https://petrapixel.neocities.org/coding/webringu), but it is now fully static and is rebuilt together with this site.
 
 ## Members
 
-<div id="webringulist"></div>
-<noscript>Please enable JavaScript to view the member list.</noscript>
+<!-- ring_members -->
 
 ## Rules
 
@@ -21,8 +20,12 @@ Since websites are inherently personal, we cannot assume that everyone will foll
 You are free to display the webring however you want, the only requirement is presence of the following links:
 
 - <https://snugnook.org/ring>
-- <https://snugnook.org/ring?action=previous>
-- <https://snugnook.org/ring?action=next>
+- <https://snugnook.org/ring/YOUR_SITE/previous>
+- <https://snugnook.org/ring/YOUR_SITE/next>
+
+You can also optionally link to a random page:
+
+- <https://snugnook.org/ring/random>
 
 Sample code to give you an idea how it can look like:
 
@@ -30,9 +33,9 @@ Sample code to give you an idea how it can look like:
 <div>
   <a href="https://snugnook.org/ring">Snug Ring</a>
   <br />
-  <a href="https://snugnook.org/ring?action=previous">previous</a>
-  <a href="https://snugnook.org/ring?action=random">random</a>
-  <a href="https://snugnook.org/ring?action=next">next</a>
+  <a href="https://snugnook.org/ring/YOUR_SITE/previous">previous</a>
+  <a href="https://snugnook.org/ring/random">random</a>
+  <a href="https://snugnook.org/ring/YOUR_SITE/next">next</a>
 </div>
 ```
 
@@ -40,4 +43,4 @@ Sample code to give you an idea how it can look like:
 
 Oh right, how to actually join?
 
-Well, it's quite simple, actually! Just ask to in `#websites` channel!
+Well, it's quite simple, actually! Just ask `@daudix` to in `#websites` channel!

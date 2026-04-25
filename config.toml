@@ -1,12 +1,15 @@
-base_url = "https://snugnook.org"
 title = "Snug Nook"
+base_url = "https://snugnook.org"
 description = "The community-focused community."
+
 theme = "ametrine"
+
 compile_sass = true
+minify_html = true
+feed_filenames = ["atom.xml", "rss.xml"]
 build_search_index = true
 author = "The Snug Nook Team"
 generate_feeds = true
-feed_filenames = ["atom.xml", "rss.xml"]
 
 taxonomies = [
   { name = "tags", feed = true, paginate_by = 10 },

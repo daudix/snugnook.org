@@ -1,0 +1,19 @@
+{% set ring = get_section(path="ring/_index.md") %}
+
+{%- set members = [] -%}
+{%- for node in ring.subsections -%}
+  {%- set member = get_section(path=node) -%}
+  {%- set member_url = "https://" ~ member.components[1] -%}
+  {%- set_global members = members | concat(with=member_url) -%}
+{%- endfor -%}
+
+<!doctype html>
+<meta charset="utf-8">
+<title>Random</title>
+<script>
+  const members = {{ members | json_encode() | safe }};
+  window.location.replace(members[Math.floor(Math.random() * members.length)]);
+</script>
+<noscript>
+  <p>JavaScript is required for picking random webring member.</p>
+</noscript>

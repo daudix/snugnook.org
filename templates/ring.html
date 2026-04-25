@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% import "macros/ring_members.html" as macros_ring_members %}
+
+{% block content %}
+
+{{- "# " ~ section.title | markdown | safe -}}
+{{- section.content | replace(from="<!-- ring_members -->", to=macros_ring_members::ring_members(section=section)) | safe -}}
+
+{% endblock content %}
