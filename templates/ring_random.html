@@ -13,7 +13,13 @@
 <title>Random</title>
 <script>
   const members = {{ members | json_encode() | safe }};
-  window.location.replace(members[Math.floor(Math.random() * members.length)]);
+  const referrerOrigin = document.referrer ? new URL(document.referrer).origin : null;
+  const candidates = referrerOrigin
+    ? members.filter(url => new URL(url).origin !== referrerOrigin)
+    : members;
+  const randomIndex = Math.floor(Math.random() * candidates.length);
+
+  window.location.replace(candidates[randomIndex]);
 </script>
 <noscript>
   <p>JavaScript is required for picking random webring member.</p>
