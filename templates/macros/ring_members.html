@@ -3,6 +3,7 @@
 <table>
   <thead>
     <tr>
+      <th>#</th>
       <th>Member</th>
       <th>Website</th>
     </tr>
@@ -11,6 +12,7 @@
   {%- for node in section.subsections -%}
     {%- set member = get_section(path=node) -%}
     <tr>
+      <td>{{ loop.index }}</td>
       <td>{{ member.title }}</td>
       <td>
         <a href="{{ 'https://' ~ member.components[1] | safe }}"><div>{{ member.components[1] }}</div></a>
