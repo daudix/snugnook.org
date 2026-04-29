@@ -1,4 +1,4 @@
 +++
-title = "Gabriel Cozma"
+title = "Gabs"
 weight = 9
 +++
