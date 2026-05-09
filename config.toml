@@ -91,4 +91,4 @@ show_timestamp = true
 service = "umami"
 id = "a1a80a4d-ade1-41c6-aa27-bb26acee4c40"
 self_hosted_url = "https://stats.daudix.one"
-do_not_track = false
+exclude_hash = true
