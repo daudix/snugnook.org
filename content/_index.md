@@ -41,7 +41,7 @@ Discord isn't your cup of tea? No big deal, we provide a high-quality Matrix bri
 <div class="icon-grid">
 
 <a href="https://matrix.to/#/#space:snugnook.org">
-<img class="transparent no-hover pixels drop-shadow icon" src="matrix.gif" alt="Pixel art Discord icon." />
+<img class="has-alpha no-hover pixels drop-shadow icon" src="matrix.gif" alt="Pixel art Discord icon." />
 <div class="details">
 <strong>Matrix</strong>
 <p><small>The only official bridge at the time.</small></p>
@@ -49,7 +49,7 @@ Discord isn't your cup of tea? No big deal, we provide a high-quality Matrix bri
 </a>
 
 <a href="https://stt.gg/D0gqYcCP">
-<img class="transparent no-hover pixels drop-shadow icon" src="stoat.gif" alt="Pixel art Stoat icon." />
+<img class="has-alpha no-hover pixels drop-shadow icon" src="stoat.gif" alt="Pixel art Stoat icon." />
 <div class="details">
 <strong>Stoat</strong>
 <p><small>Collaboration with Icycoide<sup>1</sup>.</small></p>
